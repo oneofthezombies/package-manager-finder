@@ -1,0 +1,23 @@
+{
+  "name": "package-manager-finder",
+  "version": "0.1.0",
+  "description": "Finds the package manager used in a project",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "package-manager",
+    "package",
+    "manager",
+    "packageManager"
+  ],
+  "author": "oneofthezombies",
+  "license": "MIT",
+  "packageManager": "npm@10.2.4",
+  "type": "module"
+}
