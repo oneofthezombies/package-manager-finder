@@ -2,22 +2,36 @@
   "name": "package-manager-finder",
   "version": "0.1.0",
   "description": "Finds the package manager used in a project",
-  "main": "dist/index.js",
-  "devDependencies": {
-    "@types/node": "^20.11.5",
-    "typescript": "^5.3.3"
-  },
-  "scripts": {
-    "build": "tsc"
-  },
   "keywords": [
     "package-manager",
     "package",
     "manager",
     "packageManager"
   ],
-  "author": "oneofthezombies",
   "license": "MIT",
-  "packageManager": "npm@10.2.4",
-  "type": "module"
+  "author": "oneofthezombies",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "package.json": "sort-package-json",
+    "*.ts": [
+      "prettier --list-different",
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "1.5.4",
+    "@types/node": "20.11.5",
+    "@typescript-eslint/parser": "6.19.0",
+    "husky": "8.0.3",
+    "lint-staged": "15.2.0",
+    "prettier": "3.2.4",
+    "sort-package-json": "2.6.0",
+    "typescript": "5.3.3"
+  },
+  "packageManager": "npm@10.2.4"
 }
