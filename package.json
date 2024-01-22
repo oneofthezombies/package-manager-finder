@@ -13,7 +13,7 @@
   "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "shx rm -rf dist && tsc",
     "postinstall": "husky install"
   },
   "lint-staged": {
