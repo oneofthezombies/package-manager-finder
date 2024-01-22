@@ -23,6 +23,10 @@
       "eslint"
     ]
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "devDependencies": {
     "@stylistic/eslint-plugin": "1.5.4",
     "@types/node": "20.11.5",
